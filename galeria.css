@@ -1,0 +1,317 @@
+body {
+    background-image: url('img/galeriafondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: #090c11;
+}
+
+
+.slider {
+    width: 1200px;
+    height: 650px;
+    background: url(img/galeria1.jpg) no-repeat 100% 100%;
+    background-size: cover;
+    margin: 30px 30px;
+    
+    animation: slide 30s infinite;
+}
+@keyframes slide {
+    10% {
+        background: url(img/galeria1.jpg);
+    }
+    20% {
+        background: url(img/galeria2.jpg);
+    }
+    30% {
+        background: url(img/galeria3.jpg);
+    }
+    40% {
+        background: url(img/galeria4.jpg);
+    }
+    50% {
+        background: url(img/galeria5.jpg);
+    }
+    60% {
+        background: url(img/galeria6.jpg);
+    }
+    70% {
+        background: url(img/galeria7.jpg);
+    }
+    80% {
+        background: url(img/galeria8.jpg);
+    }
+    90% {
+        background: url(img/galeria9.jpg);
+    }
+    100% {
+        background: url(img/galeria10.jpg);
+    }
+}
+
+
+nav {
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: rgb(45,128,179, 0.8);
+    width: 100%;
+}
+footer{
+    background: rgb(45,128,179, 0.8);
+}
+footer > p {
+    text-align: center;
+    color: #bfeef4;
+}
+
+.logo {
+    background: url(img/logotrabajo.png) no-repeat 50% 50%;
+    background-size: contain;
+    width: 520px;
+    height: 70px;
+    float: left;
+}
+
+
+
+
+
+
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 6px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: rgb(241, 67, 19);
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+  .whatsapp {
+    background: #0ec21d;
+    color: white;
+  }
+
+
+input{
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    border: 2px solid rgb(46,128,179);
+    color: rgb(161,201,207);
+    border-radius: 4px;
+    resize: vertical;
+    background-color: rgb(80,79,100);
+}
+input[type="submit"]{
+    width: 100%;
+    margin-top: 0;
+    background-color: rgb(46,128,179);
+    color: rgb(161,201,207);
+    font-family: 'Lucida Sans';
+    text-shadow: 2px 0 0 rgb(18,41,68), -2px 0 0 rgb(18,41,68), 0 2px 0 rgb(18,41,68), 0 -2px 0 rgb(18,41,68), 1px 1px rgb(18,41,68), -1px -1px 0 rgb(18,41,68), 1px -1px 0 rgb(18,41,68), -1px 1px 0 rgb(18,41,68);
+    letter-spacing: 10pt;
+    padding: 12px;
+    border: 2px solid rgb(46,128,179);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buscador{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.buscador p {
+    font-size: 20px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+
+.menu{
+    position: absolute;
+    right: 50px;
+}
+.menu a{
+    color: #bfeef4;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 30px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+.menu a:hover{
+    color: #45b0bf;
+}
+h1 {
+    color: #a2c9cf;
+    width: 100%;
+    height: 80px;
+    margin-top: 80px;
+    padding-top: 90px;
+    padding-left: 20px;
+ }
+/*
+header {
+    width: 100%;
+    height: 600px;
+    background: url(img/bg.png) no-repeat 50% 50%;
+    background-size: cover;
+    margin-top: 80px;
+}
+
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #a2c9cf;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #45b0bf;
+}
+
+
+/* ESTILOS DE LA PAGINA EN GENERAL */
+p {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 20px 20px 20px;
+    font-size: 20px;
+    text-align: justify;
+    color: #45b0bf;
+}
+
+@media only screen and (max-width: 900px){
+    .logo {
+        background: url(img/logotrabajo.png) no-repeat 50% 50%;
+        background-size: contain;
+        width: 320px;
+        height: 50px;
+        float: left;
+    }
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #504f64;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        color: #a2c9cf;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 200px;
+    }
+    input[type="submit"]{
+        letter-spacing: 0;
+    }
+}
+
+
+footer .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+footer .fa:hover {
+    opacity: 0.7;
+}
+footer .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+footer  .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+footer .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+footer .fa-whatsapp {
+  background: #10d04a;
+  color: white;
+}
+footer .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+footer .fa-instagram {
+  background: #125688;
+  color: white;
+}
+footer .fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
